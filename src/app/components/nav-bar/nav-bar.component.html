@@ -1,0 +1,57 @@
+<nav
+  class="nav">
+  <div
+    class="image nav__image"
+    [class.activate]="navState">
+  </div>
+
+  <button
+    (click)="onClickNavState()"
+    class="button">
+      <div
+        [class.activate]="navState"
+       class="button__switch-boxshadow">
+        <div
+          class="button__switch-off switch-state">
+        </div>
+        <div
+          class="button__switch-on switch-state">
+        </div>
+      </div>
+  </button>
+</nav>
+
+<ul
+  [class.activate]="navState"
+  class="nav__list">
+
+  <li
+    class="list__item"
+    routerLinkActive="activate"
+    (click)="onClickCloseNav()">
+    <a
+      class="list__item-link"
+      routerLinkActive="activate"
+      [routerLink]="['/servicios']">
+        Servicios
+    </a>
+  </li>
+
+  <li
+    class="list__item"
+    routerLinkActive="activate"
+    (click)="onClickCloseNav()">
+    <a
+      class="list__item-link"
+      href="#">Galería</a>
+  </li>
+
+  <li
+    class="list__item"
+    routerLinkActive="activate"
+    (click)="onClickCloseNav()">
+    <a
+    class="list__item-link"
+    href="#">Contacto</a>
+  </li>
+</ul>
