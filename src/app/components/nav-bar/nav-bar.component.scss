@@ -67,10 +67,12 @@
   flex-direction: column;
   height: 100%;
   background-color: var(--background-text--gray-color);
+  border-right:1px solid var(--primary--yellow-color);
   opacity: 0;
   transform: translateX(-100%);
   transition: all 0.5s ease-in-out;
   z-index: 1;
+  padding-top: 50px;
 
   .list__item{
     display: flex;
