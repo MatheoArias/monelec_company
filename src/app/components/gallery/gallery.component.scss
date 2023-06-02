@@ -3,11 +3,18 @@
   width: 100%;
 
   .content {
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+
     .tittle {
       font-size: 1.6rem;
       line-height: 18px;
       font-weight: 700;
       color: var(--primary--yellow-color);
+      margin: 5px 10px;
+      width: 100%;
     }
 
     .list__images {
@@ -15,13 +22,15 @@
       flex-wrap: wrap;
       max-width: 100%;
       width: 100%;
-      margin:5px;
+      justify-content: center;
+      align-items: center;
+      margin: 5px auto;
 
       .images__item {
         position: relative;
-        width: 10rem;
-        height: 105px;
-        margin: 3px;
+        width: 90px;
+        height: 130px;
+        margin: 3px 0px;
 
         .item__input {
           position: absolute;

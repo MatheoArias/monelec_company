@@ -18,13 +18,67 @@
           value="{{item.id}}"
           [formControl]="image"
           (change)="onClickImage(item)">
-        <img
-          class="item__image"
-          [src]="item.url"
-          alt="this is an image">
+          <div
+          [ngStyle]="{'background-image':'url('+ item.url +')'}"
+          class="image images__item">
+          </div>
       </li>
     </ul>
   </div>
+
+  <div
+    class="content">
+    <h2
+      class="tittle">
+      Exteriores
+    </h2>
+    <ul
+      class="list__images">
+      <li
+        *ngFor="let item of outList"
+        class="images__item">
+        <input
+          [class.activate]="modalState"
+          type="radio"
+          class="item__input"
+          value="{{item.id}}"
+          [formControl]="image"
+          (change)="onClickImage(item)">
+          <div
+          [ngStyle]="{'background-image':'url('+ item.url +')'}"
+          class="image images__item">
+          </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div
+    class="content">
+    <h2
+      class="tittle">
+      Interiores
+    </h2>
+    <ul
+      class="list__images">
+      <li
+        *ngFor="let item of inList"
+        class="images__item">
+        <input
+          [class.activate]="modalState"
+          type="radio"
+          class="item__input"
+          value="{{item.id}}"
+          [formControl]="image"
+          (change)="onClickImage(item)">
+          <div
+          [ngStyle]="{'background-image':'url('+ item.url +')'}"
+          class="image images__item">
+          </div>
+      </li>
+    </ul>
+  </div>
+
 </div>
 
 <app-modal-image

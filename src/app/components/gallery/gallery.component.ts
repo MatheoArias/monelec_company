@@ -20,53 +20,179 @@ export class GalleryComponent {
   sanDiegosimageList:Images[]=[
     {
       id:1,
-      url:"../../../assets/image/image_1.jpeg"
+      url:"../../../assets/image/san_diego/image_1.jpeg"
     },
     {
       id:2,
-      url:"../../../assets/image/image_2.jpeg"
+      url:"../../../assets/image/san_diego/image_2.jpeg"
     },
     {
       id:3,
-      url:"../../../assets/image/image_3.jpeg"
+      url:"../../../assets/image/san_diego/image_3.jpeg"
     },
     {
       id:4,
-      url:"../../../assets/image/image_4.jpeg"
+      url:"../../../assets/image/san_diego/image_4.jpeg"
     },
     {
       id:5,
-      url:"../../../assets/image/image_5.jpeg"
+      url:"../../../assets/image/san_diego/image_5.jpeg"
     },
     {
       id:6,
-      url:"../../../assets/image/image_6.jpeg"
+      url:"../../../assets/image/san_diego/image_6.jpeg"
     },
     {
       id:7,
-      url:"../../../assets/image/image_7.jpeg"
+      url:"../../../assets/image/san_diego/image_7.jpeg"
     },
     {
       id:8,
-      url:"../../../assets/image/image_8.jpeg"
+      url:"../../../assets/image/san_diego/image_8.jpeg"
     },
     {
       id:9,
-      url:"../../../assets/image/image_9.jpeg"
+      url:"../../../assets/image/san_diego/image_9.jpeg"
     },
     {
       id:10,
-      url:"../../../assets/image/image_10.jpeg"
+      url:"../../../assets/image/san_diego/image_10.jpeg"
     },
     {
       id:11,
-      url:"../../../assets/image/image_11.jpeg"
+      url:"../../../assets/image/san_diego/image_11.jpeg"
     },
     {
       id:12,
-      url:"../../../assets/image/image_12.jpeg"
+      url:"../../../assets/image/san_diego/image_12.jpeg"
     }
   ]
+  outList:Images[]=[
+    {
+      id:1,
+      url:"../../../assets/image/out/image_1.jpeg"
+    },
+    {
+      id:2,
+      url:"../../../assets/image/out/image_2.jpeg"
+    },
+    {
+      id:3,
+      url:"../../../assets/image/out/image_3.jpeg"
+    },
+    {
+      id:4,
+      url:"../../../assets/image/out/image_4.jpeg"
+    },
+    {
+      id:5,
+      url:"../../../assets/image/out/image_5.jpeg"
+    },
+    {
+      id:6,
+      url:"../../../assets/image/out/image_6.jpeg"
+    },
+    {
+      id:7,
+      url:"../../../assets/image/out/image_7.jpeg"
+    },
+    {
+      id:8,
+      url:"../../../assets/image/out/image_8.jpeg"
+    },
+    {
+      id:9,
+      url:"../../../assets/image/out/image_9.jpeg"
+    },
+    {
+      id:10,
+      url:"../../../assets/image/out/image_10.jpeg"
+    },
+    {
+      id:11,
+      url:"../../../assets/image/out/image_11.jpeg"
+    },
+    {
+      id:12,
+      url:"../../../assets/image/out/image_12.jpeg"
+    },
+    {
+      id:13,
+      url:"../../../assets/image/out/image_13.jpeg"
+    },
+    {
+      id:14,
+      url:"../../../assets/image/out/image_14.jpeg"
+    },
+    {
+      id:15,
+      url:"../../../assets/image/out/image_15.jpeg"
+    },
+    {
+      id:16,
+      url:"../../../assets/image/out/image_16.jpeg"
+    },
+    {
+      id:17,
+      url:"../../../assets/image/out/image_17.jpeg"
+    }
+  ]
+
+  inList:Images[]=[
+    {
+      id:1,
+      url:"../../../assets/image/in/image_1.png"
+    },
+    {
+      id:2,
+      url:"../../../assets/image/in/image_2.png"
+    },
+    {
+      id:3,
+      url:"../../../assets/image/in/image_3.png"
+    },
+    {
+      id:4,
+      url:"../../../assets/image/in/image_4.png"
+    },
+    {
+      id:5,
+      url:"../../../assets/image/in/image_5.png"
+    },
+    {
+      id:6,
+      url:"../../../assets/image/in/image_6.jpeg"
+    },
+    {
+      id:7,
+      url:"../../../assets/image/in/image_7.jpeg"
+    },
+    {
+      id:8,
+      url:"../../../assets/image/in/image_8.jpeg"
+    },
+    {
+      id:9,
+      url:"../../../assets/image/in/image_9.jpeg"
+    },
+    {
+      id:10,
+      url:"../../../assets/image/in/image_10.jpeg"
+    },
+    {
+      id:11,
+      url:"../../../assets/image/in/image_11.jpeg"
+    },
+    {
+      id:12,
+      url:"../../../assets/image/in/image_12.jpeg"
+    },
+    {
+      id:13,
+      url:"../../../assets/image/in/image_13.jpeg"
+    }
+  ]
+
 
   onClickImage(item:Images){
     this.imageChoose=item;
