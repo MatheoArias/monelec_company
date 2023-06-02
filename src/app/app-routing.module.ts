@@ -4,6 +4,7 @@ import { LayaoutComponent } from './components/layaout/layaout.component';
 import { ServicesPageComponent } from './components/services-page/services-page.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path:'servicios',
         component:ServicesPageComponent,
+      },
+      {
+        path:'galeria',
+        component:GalleryComponent,
       },
     ],
   },

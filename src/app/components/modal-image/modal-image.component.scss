@@ -1,0 +1,75 @@
+.content__image{
+  position: fixed;
+  display: flex;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.7s ease;
+
+
+  .content__background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: var(--background-text--gray-color);
+
+    &.activate{
+      opacity: 60%;
+    }
+  }
+
+  .image{
+    position: relative;
+    background-size: 100%;
+    max-width: 300px;
+    max-height: 450px;
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    border-radius: 10px;
+    transform: scale(0,0);
+    transition: all 0.7s ease;
+
+    &.activate{
+      transform: scale(1,1);
+      transition: all 0.5s ease;
+    }
+
+    .image-button{
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      background: transparent;
+      background-image: url('../../../assets/icons/icon_close.svg');
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center;
+      height: 20px;
+      width: 20px;
+      z-index: 2;
+      border: 1px solid black;
+      border-radius: 50%;
+      opacity: 30%;
+      transition: all 0.3s ease;
+      padding: 2px;
+    }
+    .image-button:hover{
+      opacity: 1;
+      text-shadow: 0.5;
+    }
+
+  }
+
+  &.activate{
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+}

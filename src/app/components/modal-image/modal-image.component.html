@@ -1,0 +1,23 @@
+<div
+  [class.activate]="modalState"
+  class="content__image">
+
+  <div
+    [class.activate]="modalState"
+    class="content__background">
+  </div>
+
+  <div
+    [class.activate]="modalState"
+    [ngStyle]="{'background-image':'url('+ imageChoose.url +')'}"
+    class="image">
+    <button
+      [class.activate]="modalState"
+      class="image-button"
+      (click)="onClickModal()">
+    </button>
+  </div>
+
+</div>
+
+

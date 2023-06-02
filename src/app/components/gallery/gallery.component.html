@@ -1,0 +1,34 @@
+<div
+  class="page">
+  <div
+    class="content content__sandiego">
+    <h2
+      class="tittle">
+      Clínica Oftanmológica San Diego
+    </h2>
+    <ul
+      class="list__images">
+      <li
+        *ngFor="let item of sanDiegosimageList"
+        class="images__item">
+        <input
+          [class.activate]="modalState"
+          type="radio"
+          class="item__input"
+          value="{{item.id}}"
+          [formControl]="image"
+          (change)="onClickImage(item)">
+        <img
+          class="item__image"
+          [src]="item.url"
+          alt="this is an image">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-modal-image
+  (sendEvent)="recivedEvent($event)"
+  [imageChoose]="imageChoose"
+  [modalState]="modalState">
+</app-modal-image>

@@ -11,6 +11,8 @@ import { LayaoutComponent } from './components/layaout/layaout.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ModalImageComponent } from './components/modal-image/modal-image.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FooterComponent } from './components/footer/footer.component';
     LayaoutComponent,
     NotFoundComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent,
+    ModalImageComponent
   ],
   imports: [
     BrowserModule,
